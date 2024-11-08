@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg">
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/settingsheader"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/settings"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/calibrateButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/calibrate"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calibrate" />
+
+        <ImageButton
+            android:id="@+id/visualButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/visual"
+            android:visibility="invisible" />
+
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/share"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/buttonsLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/share"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pause" />
+
+    <ImageView
+        android:id="@+id/bubbleBg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/bubblebg" />
+
+    <ImageView
+        android:id="@+id/hBubbleBg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/hbubblebg" />
+
+    <TextView
+        android:id="@+id/hText"
+        style="@style/degreesText"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hBubbleBg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="end"
+        android:text="@string/cero_degrees" />
+
+    <ImageView
+        android:id="@+id/vBubbleBg"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/hBubbleBg"
+        android:layout_below="@+id/buttonsLayout"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/vbubblebg" />
+
+    <TextView
+        android:id="@+id/vText"
+        style="@style/degreesText"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bubbleBg"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/vBubbleBg"
+        android:gravity="end"
+        android:text="@string/cero_degrees" />
+
+    <ImageView
+        android:id="@+id/imageBubble"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="17dp"
+        android:layout_toLeftOf="@+id/hImageBubble"
+        android:src="@mipmap/greenbubble" />
+
+    <ImageView
+        android:id="@+id/hImageBubble"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/hBubbleBg"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/greenbubble" />
+
+    <ImageView
+        android:id="@+id/vImageBubble"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/greenbubble" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+</RelativeLayout>

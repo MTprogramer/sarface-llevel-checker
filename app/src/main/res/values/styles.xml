@@ -1,0 +1,29 @@
+<resources>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    <style name="customSwitch" parent="@style/Theme.AppCompat.Light">
+        <item name="android:colorForeground">#42221f1f</item>
+        <item name="colorControlActivated">@color/mainbg</item>
+        <item name="colorSwitchThumbNormal">@color/lightgray</item>
+    </style>
+    <style name="degreesText" parent="">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/degrees</item>
+        <item name="android:background">@color/degreesTranslucentbg</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:layout_width">120sp</item>
+    </style>
+    <style name="settingsRow" parent="">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+    <style name="translucentDegreesText" parent="@style/degreesText">
+        <item name="android:background">@color/degreesTranslucentbg</item>
+    </style>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainbg">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonsLayout"
+        android:layout_centerInParent="true" />
+
+    <ImageButton
+        android:id="@+id/pauseButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/buttonsLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        android:contentDescription="@string/share"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pause" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/visual_cross2" />
+
+    <ImageView
+        android:id="@+id/greenCross"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/visual_circle" />
+
+    <TextView
+        android:id="@+id/degreesText"
+        style="@style/translucentDegreesText"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="end"
+        android:text="@string/cero_degrees" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/settingsheader"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/settings"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settings" />
+
+        <ImageButton
+            android:id="@+id/calibrateButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/calibrate"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calibrate"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/classicButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/calibrate" />
+
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:contentDescription="@string/share"
+            android:scaleType="fitCenter"
+            android:src="@drawable/share" />
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+</RelativeLayout>

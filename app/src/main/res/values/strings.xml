@@ -1,0 +1,27 @@
+<resources>
+
+
+    <string name="app_name">Level</string>
+    <string name="bubbleColor">Bubble Color</string>
+    <string name="bubbleSensitivity">Bubble Sensitivity</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="calibrateText">Place your device facing upwards in a leveled and flat surface (e.g the floor of your room) and press CALIBRATE. To reset to factory calibration press RESTORE.</string>
+    <string name="calibration_finished">Calibration finished</string>
+    <string name="cancel">Cancel</string>
+    <string name="cero_degrees">-00.00º</string>
+    <string name="liquidColor">Liquid Color</string>
+    <string name="moreApps">More apps</string>
+    <string name="pause">Pause or continue</string>
+    <string name="permission_explanation">Camera permission is needed to display visual information on screen</string>
+    <string name="precision">Precision</string>
+    <string name="remove_ads">Remove ads and support this project</string>
+    <string name="restore">Restore</string>
+    <string name="restore_settings">Restore initial settings</string>
+    <string name="save_settings">Save</string>
+    <string name="settings">Settings</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="share">Share with…</string>
+    <string name="showSign">Show negative sign</string>
+    <string name="start">Start</string>
+
+</resources>

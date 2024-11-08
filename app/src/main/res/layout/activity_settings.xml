@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/banner1"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/headerImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainbg"
+            android:padding="10dp"
+            android:text="@string/settings"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="18dp"
+            android:layout_height="0dp"
+            android:layout_alignTop="@+id/headerImage"
+            android:layout_alignBottom="@+id/headerImage"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:scaleX="1.2"
+            android:src="@drawable/back" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerImage">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/settingsRow"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/precision"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        style="@style/settingsRow"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/showSign"
+
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        style="@style/settingsRow"
+                        android:layout_width="match_parent"
+                        android:gravity="center_vertical"
+
+                        android:text="@string/bubbleColor"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        style="@style/settingsRow"
+                        android:layout_width="match_parent"
+
+                        android:gravity="center_vertical"
+                        android:text="@string/bubbleSensitivity"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Spinner
+                        android:id="@+id/precisionSpinner"
+                        style="@style/settingsRow"
+                        android:layout_width="match_parent" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/signSwitch"
+                        style="@style/settingsRow"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:theme="@style/customSwitch" />
+
+                    <Spinner
+                        android:id="@+id/bubbleColorSpinner"
+                        style="@style/settingsRow"
+                        android:layout_width="match_parent" />
+
+                    <Spinner
+                        android:id="@+id/bubbleSensitivitySpinner"
+                        style="@style/settingsRow"
+                        android:layout_width="match_parent"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_background"
+            android:text="@string/save_settings"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/restoreText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/saveButton"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="@string/restore_settings"
+            android:textColor="@color/dark_gray"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/banner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
